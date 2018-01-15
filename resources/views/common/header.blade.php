@@ -11,10 +11,10 @@
 					</li>
 					<li class="dropDown dropDown_hover"> <a href="/AdminUsers/information" class="dropDown_A">admin<i class="Hui-iconfont"></i></a>
 						<ul class="dropDown-menu menu radius box-shadow" >
-							<li><a href="/AdminUsers/information" style="color:#000">修改用户</a></li>
+							<!--<li><a href="/AdminUsers/information" style="color:#000">修改用户</a></li>-->
 							<!--<li><a href="/Login/toggle">{{trans('common.change_over')}}</a></li>-->
-							<li><a href="/Login/reset" style="color:#000">修改密码</a></li>
-							<li><a href="/Login/logout" style="color:#000">推出</a></li>
+							<!--<li><a href="/Login/reset" style="color:#000">修改密码</a></li>-->
+							<li><a href="/Login/logout" style="color:#000">退出</a></li>
 							
 						</ul>
 					</li>

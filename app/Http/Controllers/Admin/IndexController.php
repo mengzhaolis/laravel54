@@ -12,18 +12,6 @@ class IndexController extends CommonController
 	//显示首页
 	public function admin_index()
 	{
-		return view('Admin.Userpassword');
-	}
-	public function add()
-	{
-		return \App\Tools\ajax_succeed();
-	}
-	public function header()
-	{
-		return view('common.header');
-	}
-	public function index()
-	{
 		return view('Admin.Index');
 	}
 }

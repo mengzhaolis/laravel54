@@ -9,14 +9,25 @@
 			<ul id="min_title_list" class="acrossTab cl">
 				<li class="active">
 					<span title="首页" data-href="">首页</span>
-					<em></em></li>
-		</ul>
+					<em></em>
+				</li>
+			</ul>
+		</div>
+		<div class="Hui-tabNav-more btn-group">
+			<a id="js-tabNav-prev" class="btn radius btn-default size-S" href="javascript:;">
+				<i class="Hui-iconfont">&#xe6d4;</i>
+			</a>
+			<a id="js-tabNav-next" class="btn radius btn-default size-S" href="javascript:;">
+				<i class="Hui-iconfont">&#xe6d7;</i>
+			</a>
+		</div>
 	</div>
-		<div class="Hui-tabNav-more btn-group"><a id="js-tabNav-prev" class="btn radius btn-default size-S" href="javascript:;"><i class="Hui-iconfont">&#xe6d4;</i></a><a id="js-tabNav-next" class="btn radius btn-default size-S" href="javascript:;"><i class="Hui-iconfont">&#xe6d7;</i></a></div>
-</div>
-	
+	<!-- 首页内容区 -->
+	中央大空调
+</section>
 </body>
 @include('common.footer')
+<script type="text/javascript" src="/js/admin/jquery.contextmenu/jquery.contextmenu.r2.js"></script>
 <!-- <script src="/js/admin/lib/jquery.js"></script> -->
 <!-- <script src="/js/admin/lib/jquery.form.js"></script> -->
 <!-- <script src="/js/admin/dist/jquery.validate.min.js"></script> -->
