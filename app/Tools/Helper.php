@@ -15,5 +15,10 @@
 	{
 		return ['status'=>\Config::get('constants.status_error'),'message'=>trans('common.request_field')];
 	}
+	//参数错误
+	function ajax_news()
+	{
+		return ['status'=>\Config::get('constants.status_danger'),'message'=>trans('common.request_field')];
+	}
 
 ?>

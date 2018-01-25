@@ -14,49 +14,48 @@
 		<div class="row cl">
 			<label class="form-label col-xs-4 col-sm-3">一句话描述：</label>
 			<div class="formControls col-xs-8 col-sm-9">
-				<input type="text" class="input-text" placeholder="" name="one_miao" id="one_miao">
+				<input type="text" class="input-text" placeholder="" name="one_describe" id="one_describe">
 			</div>
 		</div>
 		
 		<div class="row cl">
 			<label class="form-label col-xs-4 col-sm-3">原价：</label>
 			<div class="formControls col-xs-8 col-sm-9">
-				<input type="password" class="input-text" autocomplete="off" placeholder="" name="pice" id="pice">
+				<input type="password" class="input-text" autocomplete="off" placeholder="" name="goods_oldpice" id="goods_oldpice">
 			</div>
 		</div>
 		<div class="row cl">
 			<label class="form-label col-xs-4 col-sm-3">促销价：</label>
 			<div class="formControls col-xs-8 col-sm-9">
-				<input type="password" class="input-text" autocomplete="off" placeholder="" name="promotion" id="promotion">
+				<input type="password" class="input-text" autocomplete="off" placeholder="" name="goods_pice" id="goods_pice">
 			</div>
 		</div>
 		
 		<div class="row cl">
 			<label class="form-label col-xs-4 col-sm-3">商品封面图：</label>
 			<div class="formControls col-xs-8 col-sm-9"> <span class="btn-upload form-group">
-				<input class="input-text upload-url" type="text" name="uploadfile1" id="uploadfile1" readonly style="width:200px">
 				<a href="javascript:void();" class="btn btn-primary upload-btn"><i class="Hui-iconfont">&#xe642;</i> 浏览文件</a>
-				<input type="file" multiple name="file-2" class="input-file">
+				<input type="file" multiple name="goods_faceimg" class="input-file">
 				</span> </div>
 		</div>
 		<div class="row cl">
 			<label class="form-label col-xs-4 col-sm-3">商品详情图：</label>
 			<div class="formControls col-xs-8 col-sm-9"> <span class="btn-upload form-group">
-				<input class="input-text upload-url" type="text" name="uploadfile1" id="uploadfile1" readonly style="width:200px">
+				
 				<a href="javascript:void();" class="btn btn-primary upload-btn"><i class="Hui-iconfont">&#xe642;</i> 浏览文件</a>
-				<input type="file" multiple name="file-2" class="input-file">
+				<input type="file" multiple name="goods_matterimg" class="input-file">
 				</span> </div>
 		</div>
 		<div class="row cl">
 			<label class="form-label col-xs-4 col-sm-3">运费：</label>
 			<div class="formControls col-xs-8 col-sm-9">
-				<input type="password" class="input-text" autocomplete="off" placeholder="" name="fee" id="fee">
+				<input type="password" class="input-text" autocomplete="off" placeholder="" name="goods_feright" id="goods_feright">
 			</div>
 		</div>
 		<div class="row cl">
 			<label class="form-label col-xs-4 col-sm-3">分类：</label>
 			<div class="formControls col-xs-8 col-sm-9"> <span class="select-box">
-				<select class="select" size="1" name="city">
+				<select class="select" size="1" name="goods_type">
 					<option value="" selected>请选择类别</option>
 					<option value="1">北京</option>
 					<option value="2">上海</option>
@@ -67,7 +66,7 @@
 		<div class="row cl">
 			<label class="form-label col-xs-4 col-sm-3">数量：</label>
 			<div class="formControls col-xs-8 col-sm-9">
-				<input type="password" class="input-text" autocomplete="off" placeholder="" name="nums" id="nums">
+				<input type="password" class="input-text" autocomplete="off" placeholder="" name="goods_nums" id="goods_nums">
 			</div>
 		</div>
 		
@@ -80,7 +79,7 @@
 		<div class="row cl">
 			<label class="form-label col-xs-4 col-sm-3">服务承诺：</label>
 			<div class="formControls col-xs-8 col-sm-9">
-				<input type="password" class="input-text" autocomplete="off" placeholder="" name="nums" id="nums">
+				<input type="password" class="input-text" autocomplete="off" placeholder="" name="goods_promise" id="goods_promise">
 			</div>
 		</div>
 		<div class="row cl">
