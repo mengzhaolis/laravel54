@@ -18,8 +18,8 @@
 	            if($v['p_id'] == $pid)
 	            {
 	                $v['level'] = $level;
-	                 // $flg = str_repeat('|―',$level);
-	                 $v['title'] = $v['title'];
+	                 $flg = str_repeat('|―',$level);
+	                 $v['good_type'] = $flg.$v['good_type'];
 	                 $tree[$k] = $v;
 	                // //  var_dump($tree);die;
 	                 $tree[$k]['son'] = $this->digui($data,$v['id'],$level+1);

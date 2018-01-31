@@ -40,6 +40,10 @@ Route::group(['prefix'=>'/goods'],function(){
 //图片管理
 
 Route::any('/img/add','Admin\ImagesController@img_add');
+//商品详情图
+Route::any('/goods_img/add','Admin\ImagesController@goods_img_add');
+//商品封图
+Route::any('/goods_img_face','Admin\ImagesController@goods_img_face');
 
     
 //注册

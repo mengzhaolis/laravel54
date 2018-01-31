@@ -65,5 +65,21 @@ class ImagesController extends CommonController
         }
         
     }
-	
+	//商品图片添加(多图片)
+    public function goods_img_add(Request $request)
+    {
+        $path = $request->file('file')->store('public');
+        $id = DB::table('goods_img')->insertGetId(['img_path'=>Storage::url($path)]);
+        // var_dump($id);die;
+        // $img_path = implode(',',$id);
+        // $path = array('path'=>$img_path);
+        return $id;
+    }
+    //商品封面图
+    public function goods_img_face(Request $request)
+    {
+        $path = $request->file('image')->store('public');
+        $id = DB::table('goods_img')->insertGetId(['img_path'=>Storage::url($path)]);
+        return $id;
+    }
 }

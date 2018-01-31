@@ -5,15 +5,32 @@ namespace app\Http\Controllers\Admin;
 use Config;
 use App\Http\Controllers\Admin\CommonController;
 use App\Model\Goods;
+use App\Model\Type;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 
 class GoodsController extends CommonController
 {
+	
 	//添加新商品
-	public function goods_add()
+	public function goods_add(Request $request)
 	{
-		return view('Goods.goods_add');
+		if(empty($request->input()))
+		{
+			$data = DB::table('goods_type')->where('status','=',1)->get();
+			$data = json_decode(json_encode($data),true);
+			$ret = (new Type())->digui($data,0,0);
+			// var_dump($ret);die;	
+			return view('Goods.goods_add',['data'=>$ret]);
+		}else
+		{
+			$data = $request->input();
+			$data = $request->except('_token','file');
+			var_dump($data);die;
+			$id = DB::table('goods')->insertGetId($data);
+
+		}
+		
 	}
 	//商品规格
 	public function goods_attdef()
